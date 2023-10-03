@@ -1,11 +1,13 @@
-a=['google','bleed','blood']
-b={}
-for i in a:
-    for j in range (len(i)-1):
-        if i[j] not in b:
-            if i[j] == i[j+1]:
-                b[i[j]]=1
-        else:
-            if i[j] == i[j+1]:
-                b[i[j]]+=1
-print(b)
+#include<stdio.h>
+void main()
+{
+    char a;
+    int b;
+   /* a='pratham';
+    b='4AL20EC035';*/
+    printf("enter name");
+    scanf("name is %c ",&a);
+    printf("enter usn");
+    scanf("roll no is %d",&b);
+    printf("%c,%d",a,b);
+}
