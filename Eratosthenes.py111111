@@ -1,0 +1,10 @@
+def sieve(limit):
+  pri=[True]*(limit+1)
+  primes=[]
+  for num in range(2,limit+1):
+    if pri[num]:
+      primes.append(num)
+      for mul in range(num*num,limit+1,num):
+        pri[mul]=False
+  return primes
+print(sieve(100))
